@@ -17,7 +17,7 @@ Name = "git-vol"
 }
 resource "aws_volume_attachment" "vol-attach" {
 device_name = "/dev/sdf"
-aws_insatance_id = aws_instance.git_instance.id
+insatance_id = aws_instance.git_instance.id
 volume_id = aws_ebs_volume.git-vol.id
 }
 
